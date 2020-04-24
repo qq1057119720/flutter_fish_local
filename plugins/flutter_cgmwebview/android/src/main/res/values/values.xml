@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="idcard_cn_agreement_unchecked_bt_color">#CFD6DD</color>
+    <color name="idcard_cn_black">#000000</color>
+    <color name="idcard_cn_blue">#51c3f6</color>
+    <color name="idcard_cn_falsh_page_text_color">#4A4A4A</color>
+    <color name="idcard_cn_flash_bg_color">#FFFFFF</color>
+    <color name="idcard_cn_gb_text_color">#5FA3FA</color>
+    <color name="idcard_cn_info_text_color">#515666</color>
+    <color name="idcard_cn_press_color">#3171C2</color>
+    <color name="idcard_cn_tips_bg_color">#282830</color>
+    <color name="idcard_cn_tips_text_color">#4A4A4A</color>
+    <color name="idcard_cn_title_bar_bg_color">#FAFAFA</color>
+    <color name="idcard_cn_toast_bg_color">#80000000</color>
+    <color name="idcard_cn_toast_text_color">#FFFFFF</color>
+    <color name="idcard_cn_upload_btn_bg_color">#5FA3FA</color>
+    <color name="idcard_cn_white">#FFFFFF</color>
+    <dimen name="idcard_cn_check_box_size">13.5dip</dimen>
+    <dimen name="idcard_cn_dialog_content_margin_left">25dp</dimen>
+    <dimen name="idcard_cn_dialog_content_margin_top">15dp</dimen>
+    <dimen name="idcard_cn_dialog_line_margin_top">22dp</dimen>
+    <dimen name="idcard_cn_dimen_1">1dp</dimen>
+    <dimen name="idcard_cn_dimen_10">10dp</dimen>
+    <dimen name="idcard_cn_dimen_15">15dp</dimen>
+    <dimen name="idcard_cn_dimen_16">16dp</dimen>
+    <dimen name="idcard_cn_dimen_20">20dp</dimen>
+    <dimen name="idcard_cn_dimen_28">28dp</dimen>
+    <dimen name="idcard_cn_dimen_3">3dp</dimen>
+    <dimen name="idcard_cn_dimen_30">30dp</dimen>
+    <dimen name="idcard_cn_dimen_4">4dp</dimen>
+    <dimen name="idcard_cn_dimen_5">5dp</dimen>
+    <dimen name="idcard_cn_dimen_60">60dp</dimen>
+    <dimen name="idcard_cn_dimen_90">90dp</dimen>
+    <dimen name="idcard_cn_falsh_page_start_btn_text">16sp</dimen>
+    <dimen name="idcard_cn_flash_image_height">170dp</dimen>
+    <dimen name="idcard_cn_flash_image_width">258dp</dimen>
+    <dimen name="idcard_cn_flash_page_big_text">32sp</dimen>
+    <dimen name="idcard_cn_flash_page_big_text_margin">40dp</dimen>
+    <dimen name="idcard_cn_gb_icon_height">18dp</dimen>
+    <dimen name="idcard_cn_gb_icon_marg_left">16dp</dimen>
+    <dimen name="idcard_cn_gb_icon_width">18dp</dimen>
+    <dimen name="idcard_cn_gb_text_size">18sp</dimen>
+    <dimen name="idcard_cn_horizontal_tips_margin_bottom">24dp</dimen>
+    <dimen name="idcard_cn_image_desc_text_size">14sp</dimen>
+    <dimen name="idcard_cn_info_text_size">14sp</dimen>
+    <dimen name="idcard_cn_progress_size">108dp</dimen>
+    <dimen name="idcard_cn_result_big_text_size">30sp</dimen>
+    <dimen name="idcard_cn_result_item_height">50dp</dimen>
+    <dimen name="idcard_cn_result_small_text_size">18sp</dimen>
+    <dimen name="idcard_cn_start_bt_height">44dp</dimen>
+    <dimen name="idcard_cn_start_bt_margin_bottom">80dp</dimen>
+    <dimen name="idcard_cn_start_bt_width">300dp</dimen>
+    <dimen name="idcard_cn_tips_bg_height">190dp</dimen>
+    <dimen name="idcard_cn_tips_text_detail_size">14sp</dimen>
+    <dimen name="idcard_cn_tips_text_size">32sp</dimen>
+    <dimen name="idcard_cn_title_bar_height">44dp</dimen>
+    <dimen name="idcard_cn_toast_text_padding_left">25dp</dimen>
+    <dimen name="idcard_cn_toast_text_padding_top">7dp</dimen>
+    <dimen name="idcard_cn_toast_text_size">12sp</dimen>
+    <dimen name="idcard_cn_user_agree_text_margin_left">8dp</dimen>
+    <dimen name="idcard_cn_user_agree_text_size">12sp</dimen>
+    <dimen name="idcard_cn_warning_small_text_margin">10dp</dimen>
+    <dimen name="idcard_guide_landscape_round_rect_height">254dp</dimen>
+    <dimen name="idcard_guide_landscape_round_rect_width">398dp</dimen>
+    <dimen name="idcard_guide_round_rect_left">15dp</dimen>
+    <string name="idcard_cn_agree_toast_text">请先同意并勾选《FaceID用户协议》</string>
+    <string name="idcard_cn_dialog_content">拍摄时请将身份证放入框内，请注意拍摄角度及光线，并确保身份证两面文字清晰</string>
+    <string name="idcard_cn_guide_text_back_side">即将进行身份证国徽面的扫描拍摄</string>
+    <string name="idcard_cn_guide_text_double_side">即将进行身份证人像面和国徽面的扫描拍摄</string>
+    <string name="idcard_cn_guide_text_front_side">即将进行身份证人像面的扫描拍摄</string>
+    <string name="idcard_cn_re_shoot">重新拍摄</string>
+    <string name="idcard_cn_remind_idcard_quality_failed_1_1">请将身份证头像面放在框内</string>
+    <string name="idcard_cn_remind_idcard_quality_failed_1_2">请将身份证国徽面放在框内</string>
+    <string name="idcard_cn_remind_idcard_quality_failed_2_1">请将身份证头像面放在框内</string>
+    <string name="idcard_cn_remind_idcard_quality_failed_2_2">请将身份证国徽面放在框内</string>
+    <string name="idcard_cn_remind_idcard_quality_failed_3">请保持光线充足，且不出现反光</string>
+    <string name="idcard_cn_remind_idcard_quality_failed_4">请保持光线充足，且不出现反光</string>
+    <string name="idcard_cn_remind_idcard_quality_failed_5">请保持光线充足，且不出现反光</string>
+    <string name="idcard_cn_remind_idcard_quality_failed_6">请将身份证头像面放在框内</string>
+    <string name="idcard_cn_remind_idcard_quality_failed_7">请将身份证国徽面放在框内</string>
+    <string name="idcard_cn_remind_idcard_quality_failed_8_1">请将身份证头像面放在框内</string>
+    <string name="idcard_cn_remind_idcard_quality_failed_8_2">请将身份证国徽面放在框内</string>
+    <string name="idcard_cn_tips_emblem">国徽面拍摄</string>
+    <string name="idcard_cn_tips_emblem_detial">请将身份证国徽面放在框内</string>
+    <string name="idcard_cn_tips_face">人像面拍摄</string>
+    <string name="idcard_cn_tips_face_detial">请将身份证人像面放在框内</string>
+    <string name="idcard_cn_upload">确认并上传</string>
+    <string name="idcard_cn_warning_small_text">请注意拍摄角度及光线，并确保身份证两面文字清晰</string>
+    <string name="idcard_cn_warning_text">识别失败</string>
+    <style name="IDCard.CN.DarkActionBar.Slide.Animation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/idcard_cn_mg_slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/idcard_cn_mg_slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/idcard_cn_mg_slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/idcard_cn_mg_slide_out_left</item>
+    </style>
+    <style name="IDCard_CN_AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/idcard_cn_push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/idcard_cn_push_bottom_out</item>
+    </style>
+    <style name="IDCard_CN_NoActionBar.Slide" parent="idcard_cn_TranslutTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/IDCard.CN.DarkActionBar.Slide.Animation</item>
+    </style>
+    <style name="idcard_cn_FullScreenTheme" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+    </style>
+    <style name="idcard_cn_TranslutTheme" parent="Megvii_idcard_cn_SDKTheme">
+        <!-- values下的主题   在4.4之前的版本，设置不了。直接跟随系统主题 -->
+    </style>
+    <style name="idcard_cn_Transparent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="idcard_cn_mProgress_circle">
+        <item name="android:indeterminateDrawable">@drawable/idcard_cn_progress_circle_shape</item>
+        <item name="android:minWidth">25dp</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:maxWidth">60dp</item>
+        <item name="android:maxHeight">60dp</item>
+    </style>
+    <style name="idcard_info_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/idcard_cn_info_text_color</item>
+        <item name="android:textSize">@dimen/idcard_cn_info_text_size</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+</resources>

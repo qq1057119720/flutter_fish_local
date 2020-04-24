@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:id="@+id/ll_top"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#68129A"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/v_status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"/>
+
+<RelativeLayout
+    android:id="@+id/rl_topview"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    android:layout_height="@dimen/dimen_100_dip">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_title"
+        android:textSize="15sp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/iv_topback"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/dimen_25_dip"
+        android:paddingRight="@dimen/dimen_25_dip"
+        android:src="@mipmap/icon_while_back"
+        android:layout_height="@dimen/dimen_100_dip"/>
+</RelativeLayout>
+
+
+</LinearLayout>
+
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_below="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_25_dip"
+        android:layout_marginTop="@dimen/dimen_80_dip"
+        android:background="@drawable/shape_webview_close_bg"
+        android:layout_height="@dimen/dimen_60_dip">
+
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:src="@mipmap/cgm_mall_more_w"
+            android:paddingLeft="@dimen/dimen_30_dip"
+            android:paddingRight="@dimen/dimen_30_dip"
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            android:layout_width="@dimen/dimen_90_dip"
+            android:layout_height="@dimen/dimen_60_dip"/>
+
+        <View
+            android:layout_width="1px"
+            android:background="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/dimen_36_dip"/>
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:src="@mipmap/cgm_mall_close_w"
+            android:layout_width="@dimen/dimen_90_dip"
+            android:layout_gravity="center_vertical"
+            android:scaleType="center"
+            android:layout_height="@dimen/dimen_60_dip"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/act_web_pro"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/ll_top"
+        android:progressDrawable="@drawable/web_progressbar"
+        android:visibility="gone" />
+
+</RelativeLayout>

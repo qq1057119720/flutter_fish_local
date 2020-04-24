@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+<FrameLayout
+    android:id="@+id/fl_shareview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_backimage"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent"/>
+<LinearLayout
+    android:layout_width="200dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="扫描下方二维码下载APP"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/iv_erweima"
+        android:layout_width="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="邀请码"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_invitecode"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+</FrameLayout>
+
+
+
+
+<TextView
+    android:id="@+id/tv_share_btn"
+    android:background="@drawable/shape_share_bg"
+    android:layout_gravity="bottom"
+    android:text="点击分享"
+    android:gravity="center"
+    android:layout_marginBottom="40dp"
+    android:textSize="16sp"
+    android:textColor="@color/white"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"/>
+
+<ImageView
+    android:id="@+id/iv_topback"
+    android:layout_width="wrap_content"
+    android:src="@mipmap/cgm_invback"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="30dp"
+    android:layout_height="wrap_content"/>
+
+
+</FrameLayout>

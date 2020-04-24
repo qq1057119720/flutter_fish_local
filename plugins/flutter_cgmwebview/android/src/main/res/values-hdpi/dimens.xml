@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="text_size_titan">36sp</dimen>
+    <dimen name="text_size_doublelarge">30sp</dimen>
+    <dimen name="text_size_large">15sp</dimen>
+    <dimen name="text_size_big">13sp</dimen>
+    <dimen name="text_size_middle">11sp</dimen>
+    <dimen name="text_size_small">9sp</dimen>
+    <dimen name="text_size_tiny">7sp</dimen>
+
+</resources>
