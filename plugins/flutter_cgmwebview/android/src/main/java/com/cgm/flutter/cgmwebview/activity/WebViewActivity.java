@@ -113,7 +113,9 @@ public class WebViewActivity extends Activity {
         }
 
         initListener();
-        webView.loadUrl(url);
+//        webView.loadUrl(url);
+        webView.loadUrl("file:////android_asset/index.html");
+
     }
 
     class JavascriptHandler {

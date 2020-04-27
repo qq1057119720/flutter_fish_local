@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        (function (w, d, s, u) {
+            w.RocketChat = function (c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
+            var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
+            j.async = true; j.src = 'https://chat.coinflex-cn.com/livechat/rocketchat-livechat.min.js?_=201903270000';
+            h.parentNode.insertBefore(j, h);
+
+            RocketChat(function () {
+                this.maximizeWidget();
+                this.onChatMinimized(function () {
+                    // do whatever you want
+                    callFlutter();
+                    console.log('chat widget minimized');
+                });
+            });
+        })(window, document, 'script', 'https://chat.coinflex-cn.com/livechat');
+
+        function callJS(username, userId) {
+            if (userId != "" && username != "") {
+                RocketChat(function () {
+                    this.setGuestEmail(username);
+                    this.setGuestName(userId);
+
+                });
+            }
+        }
+        function callFlutter() {
+            document.location = "js://webview";
+        }
+    </script>
+</body>
+
+</html>

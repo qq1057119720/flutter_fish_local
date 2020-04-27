@@ -93,36 +93,4 @@
         <item name="android:activityCloseEnterAnimation">@anim/idcard_cn_mg_slide_in_left</item>
         <item name="android:activityCloseExitAnimation">@anim/idcard_cn_mg_slide_out_left</item>
     </style>
-    <style name="IDCard_CN_AnimBottom" parent="@android:style/Animation">
-        <item name="android:windowEnterAnimation">@anim/idcard_cn_push_bottom_in</item>
-        <item name="android:windowExitAnimation">@anim/idcard_cn_push_bottom_out</item>
-    </style>
-    <style name="IDCard_CN_NoActionBar.Slide" parent="idcard_cn_TranslutTheme">
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowAnimationStyle">@style/IDCard.CN.DarkActionBar.Slide.Animation</item>
-    </style>
-    <style name="idcard_cn_FullScreenTheme" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
-    </style>
-    <style name="idcard_cn_TranslutTheme" parent="Megvii_idcard_cn_SDKTheme">
-        <!-- values下的主题   在4.4之前的版本，设置不了。直接跟随系统主题 -->
-    </style>
-    <style name="idcard_cn_Transparent">
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowIsTranslucent">true</item>
-    </style>
-    <style name="idcard_cn_mProgress_circle">
-        <item name="android:indeterminateDrawable">@drawable/idcard_cn_progress_circle_shape</item>
-        <item name="android:minWidth">25dp</item>
-        <item name="android:minHeight">25dp</item>
-        <item name="android:maxWidth">60dp</item>
-        <item name="android:maxHeight">60dp</item>
-    </style>
-    <style name="idcard_info_style">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/idcard_cn_info_text_color</item>
-        <item name="android:textSize">@dimen/idcard_cn_info_text_size</item>
-        <item name="android:layout_centerVertical">true</item>
-    </style>
 </resources>

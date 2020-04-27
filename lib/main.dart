@@ -61,7 +61,7 @@ class MyAppState extends State<MyApp> with WidgetsBindingObserver{
         const Locale('en', 'US'), // 美国英语
         const Locale('zh', 'CN'), // 中文简体
       ],
-      home: AppRoute.global.buildPage(RoutePath.TEST_LIST, null),
+      home: AppRoute.global.buildPage(RoutePath.WEB_VIEW, null),
       onGenerateRoute: (RouteSettings settings) {
         return MaterialPageRoute<Object>(builder: (BuildContext context) {
           return AppRoute.global.buildPage(settings.name, settings.arguments);

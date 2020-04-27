@@ -3,6 +3,7 @@ import 'package:local/pages/listview_page/page.dart';
 import 'package:local/pages/textedit_page/page.dart';
 import 'package:local/pages/themedemo/page.dart';
 import 'package:local/pages/themedemo/testtheme/page.dart';
+import 'package:local/pages/web_page/page.dart';
 
 
 import 'global_store/state.dart';
@@ -20,6 +21,7 @@ class AppRoute {
           RoutePath.TEST_THEME: TestThemePage(),
           RoutePath.TEXT_EDIT: TextEditPage(),
           RoutePath.TEST_LIST: TestListviewPage(),
+          RoutePath.WEB_VIEW: WebViewPage(),
         },
         visitor: (String path, Page<Object, dynamic> page) {
           /// 只有特定的范围的Page才需要建立和AppStore的连接关系
@@ -91,7 +93,7 @@ class RoutePath {
   static const TEST_THEME = "test_theme";
   static const TEXT_EDIT = "text_edit";
   static const TEST_LIST = "test_list";
-
+  static const WEB_VIEW = "web_view";
 }
 
 /// 简单的Effect AOP
