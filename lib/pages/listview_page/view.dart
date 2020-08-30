@@ -124,7 +124,7 @@ return MediaQuery.of(ctx).size.height;
 
 class _DragState2 extends State<_Drag2> with SingleTickerProviderStateMixin {
   //Text 上下间距
-  static double textMargin=10;
+  static double textMargin=0;
   //Text 高度
  static double textHeight=20;
   //Text 宽度
@@ -211,6 +211,7 @@ class _DragState2 extends State<_Drag2> with SingleTickerProviderStateMixin {
               child: Container(
                 width: textWidth,
                 height: textHeight,
+                color: Colors.red,
                 margin: EdgeInsets.only(top: textMargin,bottom: textMargin),
                 child: Text("课程1",style: TextStyle(fontSize: 16),),
               ),
@@ -221,6 +222,7 @@ class _DragState2 extends State<_Drag2> with SingleTickerProviderStateMixin {
               child: Container(
                 width: textWidth,
                 height: textHeight,
+                color: Colors.red,
                 margin: EdgeInsets.only(top: textMargin,bottom: textMargin),
                 child: Text("课程2",style: TextStyle(fontSize: 16),),
               ),
@@ -231,6 +233,7 @@ class _DragState2 extends State<_Drag2> with SingleTickerProviderStateMixin {
               child: Container(
                 width: textWidth,
                 height: textHeight,
+                color: Colors.red,
                 margin: EdgeInsets.only(top: textMargin,bottom: textMargin),
                 child: Text("课程3",style: TextStyle(fontSize: 16),),
               ),
@@ -241,6 +244,7 @@ class _DragState2 extends State<_Drag2> with SingleTickerProviderStateMixin {
               child: Container(
                 width: textWidth,
                 height: textHeight,
+                color: Colors.red,
                 margin: EdgeInsets.only(top: textMargin,bottom: textMargin),
                 child: Text("课程4",style: TextStyle(fontSize: 16),),
               ),
@@ -272,7 +276,7 @@ class _DragState2 extends State<_Drag2> with SingleTickerProviderStateMixin {
 
 
           print("moveY：${moveY}");
-          moveY=moveY*0.15;
+          moveY=moveY*0.1;
           setState(() {
             /*
                 移动轨迹说明：
@@ -287,7 +291,6 @@ class _DragState2 extends State<_Drag2> with SingleTickerProviderStateMixin {
               }else{
                 textColor1= Color(0xff8d8d8d);
               }
-
               println("text one "+textRight1.toString()+"---"+textTop1.toString());
               textRight2=changeRight(textRight2, textTop2, moveY);
               textTop2=changeTop(textTop2, moveY);
