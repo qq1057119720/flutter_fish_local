@@ -123,6 +123,8 @@ return MediaQuery.of(ctx).size.height;
 }
 
 class _DragState2 extends State<_Drag2> with SingleTickerProviderStateMixin {
+  static double baseMargin=35;
+
   //Text 上下间距
   static double textMargin=0;
   //Text 高度
@@ -133,16 +135,18 @@ class _DragState2 extends State<_Drag2> with SingleTickerProviderStateMixin {
   static double radius=100;
 
   //text1 的坐标
-  double textTop1=radius-sqrt(radius*radius-textWidth*textWidth);
-  double textRight1=0;
+  double textTop1=baseMargin;
+  double textRight1=(sqrt(radius*radius-(radius-baseMargin)*(radius-baseMargin)))-80;
 
   //text2 的坐标
-  double textTop2=radius;
-  double textRight2=radius-textWidth;
+  double textTop2=baseMargin*2+20;
+  double textRight2=(sqrt(radius*radius-(radius-(baseMargin*2+20))*(radius-(baseMargin*2+20))))-80;
 
   //text3 的坐标
-  double textTop3=radius+sqrt(radius*radius-textWidth*textWidth);
-  double textRight3=0;
+  double textTop3=baseMargin*3+40;
+  double textRight3=(sqrt(radius*radius-(2*radius-(baseMargin*3+40))*
+      (2*radius-(baseMargin*3+40))))-80;
+
 
   double textTop4=radius*2;
   double textRight4=-textWidth;
@@ -162,12 +166,16 @@ class _DragState2 extends State<_Drag2> with SingleTickerProviderStateMixin {
     top=top-moveY;
     //如果此时top是0，则将Text移动到最低端
     if(top<=0){
-      top=radius*2;
+      top=radius*2+top+20;
     }
     return top;
   }
   double changeRight(double right,double top,double moveY){
     //需要判断是在上半区还是下半区
+
+    if(top>radius*2){
+      return -80;
+    }
 
     if(top<=radius){
       //上半区
@@ -187,7 +195,6 @@ class _DragState2 extends State<_Drag2> with SingleTickerProviderStateMixin {
       right=-80;
     }
 
-    println(right.toString()+"-------------");
     return right;
   }
 
@@ -211,9 +218,8 @@ class _DragState2 extends State<_Drag2> with SingleTickerProviderStateMixin {
               child: Container(
                 width: textWidth,
                 height: textHeight,
-                color: Colors.red,
                 margin: EdgeInsets.only(top: textMargin,bottom: textMargin),
-                child: Text("课程1",style: TextStyle(fontSize: 16),),
+                child: Text("课程1",style: TextStyle(fontSize: 16,color: textColor1),),
               ),
             ),
             Positioned(
@@ -222,9 +228,9 @@ class _DragState2 extends State<_Drag2> with SingleTickerProviderStateMixin {
               child: Container(
                 width: textWidth,
                 height: textHeight,
-                color: Colors.red,
                 margin: EdgeInsets.only(top: textMargin,bottom: textMargin),
-                child: Text("课程2",style: TextStyle(fontSize: 16),),
+                child: Text("课程2",style: TextStyle(fontSize: 16,color:
+                textColor2),),
               ),
             ),
             Positioned(
@@ -233,9 +239,9 @@ class _DragState2 extends State<_Drag2> with SingleTickerProviderStateMixin {
               child: Container(
                 width: textWidth,
                 height: textHeight,
-                color: Colors.red,
                 margin: EdgeInsets.only(top: textMargin,bottom: textMargin),
-                child: Text("课程3",style: TextStyle(fontSize: 16),),
+                child: Text("课程3",style: TextStyle(fontSize: 16,color:
+                textColor3),),
               ),
             ),
             Positioned(
@@ -244,9 +250,9 @@ class _DragState2 extends State<_Drag2> with SingleTickerProviderStateMixin {
               child: Container(
                 width: textWidth,
                 height: textHeight,
-                color: Colors.red,
                 margin: EdgeInsets.only(top: textMargin,bottom: textMargin),
-                child: Text("课程4",style: TextStyle(fontSize: 16),),
+                child: Text("课程4",style: TextStyle(fontSize: 16,color:
+                textColor4),),
               ),
             ),
           ],
@@ -268,39 +274,70 @@ class _DragState2 extends State<_Drag2> with SingleTickerProviderStateMixin {
           //移动的Y轴的距离，
           double moveY;
         if(downDetails.globalPosition.dy-e.globalPosition.dy>0){
-          moveY=(downDetails.globalPosition.dy-e.globalPosition.dy)%radius;
+          moveY=(downDetails.globalPosition.dy-e.globalPosition.dy);
         }else{
-          moveY=(e.globalPosition.dy-downDetails.globalPosition.dy)%radius;
+          moveY=(e.globalPosition.dy-downDetails.globalPosition.dy);
         }
 
 
 
           print("moveY：${moveY}");
           moveY=moveY*0.1;
+          print("最终移动距离：${moveY}");
           setState(() {
             /*
                 移动轨迹说明：
                 当right=textWidth时候，将该text放到最底部
                */
             if(moveY>0){
-              textRight1=changeRight(textRight1, textTop1, moveY);
+              //根据顶部的来推算其他的
               textTop1=changeTop(textTop1, moveY);
+
+              textRight1=changeRight(textRight1, textTop1, moveY);
 
               if(textTop1>radius-20&&textTop1<radius+20){
                 textColor1= Color(0xff00C569);
               }else{
                 textColor1= Color(0xff8d8d8d);
               }
+
+
               println("text one "+textRight1.toString()+"---"+textTop1.toString());
-              textRight2=changeRight(textRight2, textTop2, moveY);
+
               textTop2=changeTop(textTop2, moveY);
+              textRight2=changeRight(textRight2, textTop2, moveY);
+
+              if(textTop2>radius-20&&textTop2<radius+20){
+                textColor2= Color(0xff00C569);
+              }else{
+                textColor2= Color(0xff8d8d8d);
+              }
               println("text two "+textRight2.toString()+"---"+textTop2.toString());
-              textRight3=changeRight(textRight3, textTop3, moveY);
+
               textTop3=changeTop(textTop3, moveY);
+              textRight3=changeRight(textRight3, textTop3, moveY);
+              if(textTop3>radius-20&&textTop3<radius+20){
+                textColor3= Color(0xff00C569);
+              }else{
+                textColor3= Color(0xff8d8d8d);
+              }
               println("text three "+textRight3.toString()+"---"+textTop3.toString());
-              textRight4=changeRight(textRight4, textTop4, moveY);
+
               textTop4=changeTop(textTop4, moveY);
+              textRight4=changeRight(textRight4, textTop4, moveY);
+              if(textTop4>radius-20&&textTop4<radius+20){
+                textColor4= Color(0xff00C569);
+              }else{
+                textColor4= Color(0xff8d8d8d);
+              }
               println("text four "+textRight4.toString()+"---"+textTop4.toString());
+
+
+
+              println("text top change "+textTop1.toString()+"---"+textTop2
+                  .toString()+"---"+textTop3
+                  .toString()+"---"+textTop4
+                  .toString());
             }
 
 
